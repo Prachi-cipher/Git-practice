@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopNest</title>
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">ShopNest</div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">New Arrivals</a>
+        <a href="#">Deals</a>
+        <a href="#">Contact</a>
+      </nav>
+      <button class="cart-button" aria-label="Shopping cart">
+        🛒 <span id="cart-count">0</span>
+      </button>
+    </header>
+
+    <main class="page">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Fresh picks for summer</p>
+          <h1>Style your everyday life</h1>
+          <p class="hero-text">
+            Discover essentials, accessories, and trending products at amazing
+            prices.
+          </p>
+          <button class="primary-btn">Shop now</button>
+        </div>
+      </section>
+
+      <section class="products-section">
+        <div class="section-heading">
+          <h2>Featured Products</h2>
+          <span>Free shipping over $50</span>
+        </div>
+        <div id="product-list" class="product-grid"></div>
+      </section>
+    </main>
+
+    <aside class="cart-panel" id="cart-panel">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button id="clear-cart" class="clear-btn">Clear</button>
+      </div>
+      <div id="cart-items" class="cart-items"></div>
+      <div class="cart-footer">
+        <div class="total-row">
+          <span>Total</span>
+          <strong id="total-price">$0.00</strong>
+        </div>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+    </aside>
+
+    <script src="script.js"></script>
+  </body>
+</html>
